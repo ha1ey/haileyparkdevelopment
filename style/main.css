@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Spline+Sans:wght@300;400;500;600;700&display=swap");
+html {
+  cursor: url("img/smile.png"), auto;
+}
+
+body {
+  margin: 0;
+  background: #ece8e1;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  font-family: "Manrope", sans-serif;
+  font-weight: 400;
+  position: relative;
+}
+header nav {
+  float: left;
+  z-index: 5;
+  width: 5vw;
+  height: 100vh;
+  border-right: 1px solid black;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  background-color: #d5cdbf;
+}
+header nav ul {
+  width: 100%;
+  margin: 0;
+  padding: 40% 0;
+  -ms-writing-mode: tb-rl;
+      writing-mode: vertical-rl;
+  text-align: center;
+  transform: rotate(180deg);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav ul li {
+  font-size: 1.5rem;
+  list-style: none;
+  text-decoration: none;
+}
+header .menu-wrap {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  border-bottom: 1px solid black;
+  margin: 0;
+  padding: 0;
+  background-color: #d5cdbf;
+}
+header .menu-wrap .btnHome {
+  border-right: 1px solid black;
+  display: table;
+  padding: 0 1.1rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+header .menu-wrap .btnHome a {
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 3.4rem;
+  font-family: "Spline Sans", sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  color: #191919;
+}
+header .menu-wrap .menu-ul {
+  display: flex;
+  width: 70%;
+  margin: 0;
+  padding: 0;
+  justify-content: space-around;
+  align-items: center;
+}
+header .menu-wrap .menu-ul .menu-li {
+  list-style: none;
+  font-size: 1.875rem;
+}
+header .menu-wrap .menu-ul .menu-li a {
+  color: #191919;
+  text-decoration: none;
+}
+header .menu-wrap .copyright {
+  background-color: #d5cdbf;
+  font-size: 1.5rem;
+  height: 100vh;
+  width: 5vw;
+  -ms-writing-mode: tb-rl;
+      writing-mode: vertical-rl;
+  text-align: center;
+  transform: rotate(180deg);
+  border-right: 1px solid black;
+  display: table;
+}
+header .menu-wrap .copyright div {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+#main {
+  position: absolute;
+  left: 5vw;
+  bottom: 0;
+  width: 90vw;
+  height: calc(100vh - 200px);
+  overflow: scroll;
+  padding-left: 3%;
+}
+#main .project_wrap {
+  display: flex;
+  font-family: "Manrope", sans-serif;
+}
+#main .project_wrap .project_number {
+  color: #2e9168;
+  font-size: 2.96rem;
+  font-weight: 500;
+  margin-right: 2.3%;
+}
+#main .project_wrap .project_arrow {
+  display: none;
+}
+#main .project_wrap .project_title {
+  font-size: 5.8rem;
+  font-weight: bold;
+  color: #191919;
+  z-index: 5;
+}
+#main .project_wrap .project_title.active {
+  color: #2e9168;
+}
+#main .project_wrap .project_pic {
+  display: none;
+  z-index: 1;
+  margin-left: -2.5%;
+}/*# sourceMappingURL=main.css.map */

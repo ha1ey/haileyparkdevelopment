@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Spline+Sans:wght@300;400;500;600;700&display=swap');
+
+$line-color: #d5cdbf;
+$body-color: #ece8e1;
+$main-font-color: #191919;
+$point-color:#2e9168;
+
+$main-font: 'Manrope', sans-serif;
+
+html{
+    cursor: url('img/smile.png'), auto;
+}
+
+body{
+    margin:0;
+    background: $body-color; 
+}
+
+header{
+    width:100%;
+    display: flex;
+    font-family: $main-font;
+    font-weight: 400;
+    position: relative;
+
+    nav{
+        float:left;
+        z-index:5;
+        width:5vw;
+        height:100vh;
+        border-right:1px solid black;
+        display: flex;
+        margin:0;
+        padding:0;
+    background-color: $line-color;
+    }
+
+    nav ul{
+        width: 100%;
+        margin: 0;
+        padding: 40% 0;
+        writing-mode: vertical-rl;
+        text-align: center;
+        transform: rotate(180deg);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav ul li{
+        font-size:1.5rem;
+        list-style: none;
+        text-decoration: none;
+    }
+
+
+    .menu-wrap{
+
+        height: 100px;
+        width: 100%;
+        display: flex;
+        border-bottom:1px solid black;
+        margin:0; 
+        padding:0;
+        background-color: $line-color;
+
+        .btnHome{
+            border-right:1px solid black;
+            display: table;
+            padding:0 1.1rem;
+            width: fit-content;
+
+            a{
+                display: table-cell;
+                vertical-align: middle;
+                font-size:3.4rem;
+                font-family: 'Spline Sans', sans-serif;
+                font-weight: bold;
+                text-decoration: none;
+                color:$main-font-color;
+            }
+        }
+
+
+        .menu-ul{
+            display: flex;
+            width:70%;
+            margin:0;
+            padding:0;
+            justify-content: space-around;
+            align-items: center;
+        
+            .menu-li{
+                list-style: none;
+                font-size:1.875rem;
+                a{
+                    color:$main-font-color;
+                    text-decoration: none;
+                }
+            }
+        
+        }
+
+        .copyright{
+            background-color: $line-color;
+            font-size:1.5rem;
+            height: 100vh;
+            width: 5vw;
+            writing-mode: vertical-rl;
+            text-align: center;
+            transform: rotate(180deg);
+            border-right: 1px solid black;
+            display: table;
+            div{
+                display: table-cell;
+                vertical-align: middle;
+            }
+        }
+    }
+}
+
+#main {
+    position: absolute;
+    left: 5vw;
+    bottom: 0;
+    width: 90vw;
+    height: calc(100vh - 200px);
+    overflow: scroll;
+    padding-left: 3%;
+    
+    .project_wrap{
+        display: flex;
+        font-family: $main-font;
+
+        .project_number{
+            color: $point-color;
+            font-size: 2.96rem;
+            font-weight: 500;
+            margin-right:2.3%;
+        }
+        .project_arrow{
+            display: none;
+        }
+          
+        .project_title{
+            font-size: 5.8rem;
+            font-weight: bold;
+            color:$main-font-color;
+            z-index: 5;
+        }
+        .project_title.active{
+            color:$point-color;
+        }
+        .project_pic{
+            display: none;
+            z-index:1;
+            margin-left:-2.5%;
+        }
+    }
+}

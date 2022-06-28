@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Hailey Chaewon Park Portfolio</title>
+  </head>
+  <link rel="stylesheet" href="style/main.css" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <body>
+    <header>
+    <nav>
+      <ul>
+        <li>@2022</li>
+        <li>FULL-STACKED</li>
+        <li>DEVELOPER</li>
+      </ul>
+    </nav>
+    <div class="menu-wrap">
+      <div class="btnHome">
+        <a href="#">Hailey. Park</a>
+      </div>
+      <ul class="menu-ul">
+        <li class="menu-li"><a href="">PROJECTS</a></li>
+        <li class="menu-li"><a href="">ABOUT</a></li>
+        <li class="menu-li"><a href="">CONTACT</a></li>
+      </ul>
+      <div class="copyright"><div>@HAILEY_PARK_</div></div>  
+    </div> 
+    </header>
+    <section id="main">
+      <div class="project_list">
+        <script>
+          var prjTitle = ["ECA", "BOHAE", "SKINRx LAB", "INUS", "COREELLE", "DCTRL", "SURFEA", "WHEN BEAUTY", "KOHYOH", "VELY VELY", "AG7" ,"SOLVED SKINCARE", "FUTURE GOD", "PICKY WICKY"];
+          for (var i = 1; i <=prjTitle.length; i++) {
+            document.write('<div class="project_wrap">');
+            document.write('<div class="project_number">'+i+'</div>');
+            document.write('<div class="project_arrow"><img src="style/img/arrow.png" alt="arrow"></div>');
+            document.write('<div class="project_title">'+prjTitle[i-1]+'</div>');
+            document.write('<div class="project_pic"><img src="style/img/'+prjTitle[i-1]+'.jpg"></div></div>');
+          }
+      </script>
+      </div>
+    </section>
+  </body>
+  <script src="custom.js"></script>
+</html>
